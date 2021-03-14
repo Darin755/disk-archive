@@ -3,11 +3,14 @@ A executable disk image. When run it mounts unzips itself and mounts the virtual
 
 ## To use:
 chmod +x disk
+
 ./disk
 
 ## Requirements:
 zip
+
 unzip
 
 ## Download:
+
 https://github.com/Darin755/disk-archive/releases/download/1.0/disk
