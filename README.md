@@ -14,3 +14,7 @@ unzip
 ## Download:
 
 https://github.com/Darin755/disk-archive/releases/download/1.0/disk
+
+## To Create
+
+cat script contents.zip > disk
