@@ -1,0 +1,18 @@
+#!/bin/bash
+l=$PWD/$(basename $0)
+unzip -d /tmp/ $l 
+echo mounting
+sudo kpartx -av /tmp/disk.img
+echo disk will remain mounted until key press
+read -p "push any key to unmount..."
+sudo umount /dev/mapper/*
+sudo kpartx -dv /tmp/disk.img
+cd /tmp
+zip contents.zip disk.img script
+cat script contents.zip > final
+mv final $l
+rm disk.img script contents.zip
+chmod +x $l
+echo unmounted and cleaned up
+exit
+
