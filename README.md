@@ -1,5 +1,5 @@
 # disk-archive
-A executable disk image. When run it mounts unzips itself and mounts the virtual disk. It then waits for a key to be pressed. After a key is pressed, it saves changes to the virtual disk and removes temporary files.
+A executable disk image. When it runs it unzips itself and mounts the virtual disk. It then waits for a key to be pressed. After a key is pressed, it saves changes to the virtual disk and removes temporary files.
 
 ## To use:
 chmod +x disk
